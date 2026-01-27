@@ -146,7 +146,7 @@ export const PROMO_ITEMS: PromoItem[] = [
 
 // CONTACT_INFO used in Footer, Cart, and OrderSection
 export const CONTACT_INFO = {
-  phone: "6281234567890",
+  phone: "6285855747776",
   email: "hello@jemberbowl.com",
   address: "Jl. Jawa No. 12, Sumbersari, Jember, Jawa Timur",
   halalId: "ID35110001234560123",
