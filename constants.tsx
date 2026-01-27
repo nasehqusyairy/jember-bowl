@@ -146,11 +146,11 @@ export const PROMO_ITEMS: PromoItem[] = [
 
 // CONTACT_INFO used in Footer, Cart, and OrderSection
 export const CONTACT_INFO = {
-  phone: "0812-3456-7890",
+  phone: "6281234567890",
   email: "hello@jemberbowl.com",
   address: "Jl. Jawa No. 12, Sumbersari, Jember, Jawa Timur",
   halalId: "ID35110001234560123",
-  grabFoodLink: "https://food.grab.com",
-  goFoodLink: "https://gofood.link",
-  shopeeFoodLink: "https://shopee.co.id/food"
+  grabFoodLink: "https://r.grab.com/g/6-20260127_115014_7d7bfcd5c87e49b39b29b212c266c16d_MEXMPS-6-C6J1EFKWNKX2G2",
+  goFoodLink: "https://gofood.link/a/LtxzBdu",
+  shopeeFoodLink: "https://spf.shopee.co.id/6KyVt0Gnen"
 };
