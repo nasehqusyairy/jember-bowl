@@ -6,6 +6,16 @@ export interface MenuItem {
   image: string;
   tagline?: string;
   isPopular?: boolean;
+  price: number;
+}
+
+export interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  quantity: number;
+  image: string;
+  isPromo?: boolean;
 }
 
 export interface PromoItem {
@@ -13,6 +23,7 @@ export interface PromoItem {
   title: string;
   description: string;
   image: string;
+  price: number;
 }
 
 export enum SectionId {
