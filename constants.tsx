@@ -2,6 +2,7 @@ import { MenuItem, PromoItem } from './types';
 import paketBerduaImage from './images/paket-berdua.jpeg'
 import promoBundlingImage from './images/promo-bundling.jpeg'
 import promoValentineImage from './images/promo-valentine.jpeg'
+import promoMaba from './images/promo-maba.jpeg'
 
 import post1 from '@/images/post1.jpeg'
 import post2 from '@/images/post2.jpeg'
@@ -109,7 +110,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "id": "27",
     "name": "Cumi Ciamik",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050204001720431/detail/menueditor_item_5cec3baf15ce4a21be0a4632aaa5516f_1714622356662230545.webp",
+    "image": "/images/cumi-ciamik.jpeg",
     "tagline": "Nasi, Cumi Bumbu Hitam, Scramble Egg, Sayuran",
     "price": 30000,
     "type": 0
@@ -339,13 +340,20 @@ export const PROMO_ITEMS: PromoItem[] = [
     image: promoBundlingImage,
     price: 25000
   },
-  // {
-  //   id: "p3",
-  //   title: "Valentine's Day Promo",
-  //   description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
-  //   image: promoValentineImage,
-  //   price: 40000
-  // }
+  {
+    id: "p3",
+    title: "Valentine's Day Promo",
+    description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
+    image: promoValentineImage,
+    price: 40000
+  },
+  {
+    id: "p4",
+    title: "Promo Maba Kota Jember",
+    description: "Spesial buat kamu Mahasiswa Baru (MABA) di Kota Jember! 🎓 Nikmati promo khusus All Varian Menu Bowl hanya dengan Rp19.500. Cukup tunjukkan KTM atau Twibbon MABA 2026 kamu dan jangan lupa follow sosial media @JemberBowl untuk klaim harganya. Yuk, sambut semester baru dengan rasa yang otentik!",
+    image: promoMaba,
+    price: 40000
+  }
 ];
 
 // CONTACT_INFO used in Footer, Cart, and OrderSection
