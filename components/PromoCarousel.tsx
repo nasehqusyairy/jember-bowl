@@ -45,7 +45,7 @@ const PromoCarousel: React.FC<PromoCarouselProps> = ({ onAddToCart, onRemoveFrom
               return (
                 <div
                   key={promo.id}
-                  className="group flex flex-col bg-white shadow-2xl p-4 border-[#D49A1F] border-b-8 rounded-[2rem] w-[280px] md:w-[320px] transition-all hover:-translate-y-2 duration-300 snap-center shrink-0"
+                  className="group flex flex-col bg-white shadow-2xl p-4 border-[#D49A1F] border-b-8 rounded-4xl w-70 md:w-[320px] transition-all hover:-translate-y-2 duration-300 snap-center shrink-0"
                 >
                   <div className="relative bg-amber-50 mb-4 rounded-2xl aspect-square overflow-hidden">
                     <img
@@ -65,7 +65,7 @@ const PromoCarousel: React.FC<PromoCarouselProps> = ({ onAddToCart, onRemoveFrom
                     )}
 
                     {/* Hover Overlay */}
-                    {!claimed && (
+                    {/* {!claimed && (
                       <div className="absolute inset-0 flex justify-center items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
                         <button
                           onClick={() => onAddToCart(promo)}
@@ -74,11 +74,11 @@ const PromoCarousel: React.FC<PromoCarouselProps> = ({ onAddToCart, onRemoveFrom
                           + TAMBAH
                         </button>
                       </div>
-                    )}
+                    )} */}
                   </div>
 
                   <h4 className="mb-1 font-black text-[#8B4513] text-xl leading-tight">{promo.title}</h4>
-                  <p className="flex-grow mb-6 font-bold text-[#4A3428]/50 text-[11px] uppercase line-clamp-2 leading-relaxed tracking-wider">
+                  <p className="mb-6 font-bold text-[#4A3428]/50 text-[11px] uppercase line-clamp-2 leading-relaxed tracking-wider grow">
                     {promo.description}
                   </p>
 

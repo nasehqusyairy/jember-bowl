@@ -82,17 +82,17 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
           </div>
         </div>
 
-        <div className="gap-4 lg:gap-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-16 min-h-[400px]">
+        <div className="gap-2 lg:gap-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-16 min-h-100">
           {filtered.map((item) => {
             const qty = getItemQuantity(item.id);
             return (
-              <div key={item.id} className="group flex flex-col bg-white shadow-xl p-4 border-[#D49A1F]/20 border-b-8 rounded-[2rem] h-full transition-all hover:-translate-y-2">
-                <div className="relative bg-amber-50 mb-4 rounded-2xl aspect-square overflow-hidden">
+              <div key={item.id} className="group flex flex-col bg-white shadow-xl p-4 border-[#D49A1F]/20 border-b-8 rounded-xl h-full transition-all hover:-translate-y-2">
+                <div className="relative bg-amber-50 mb-4 rounded-xl aspect-square overflow-hidden">
                   <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   {item.isPopular && (
                     <div className="top-3 right-3 z-10 absolute bg-[#D49A1F] shadow-lg px-3 py-1 rounded-full font-black text-[10px] text-white uppercase">FAVORIT</div>
                   )}
-                  {qty === 0 && (
+                  {/* {qty === 0 && (
                     <div className="absolute inset-0 flex justify-center items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
                       <button
                         onClick={() => onAddToCart(item)}
@@ -101,18 +101,18 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
                         + TAMBAH
                       </button>
                     </div>
-                  )}
+                  )} */}
                 </div>
 
+                <span className="block mb-2 font-black text-amber-600 text-xs">{item.rating.toFixed(1)} ⭐</span>
                 <h4 className="mb-1 font-black text-[#8B4513] text-lg leading-tight">{item.name}</h4>
-                <p className="flex-grow mb-4 font-bold text-[#4A3428]/50 text-[10px] line-clamp-2">{item.tagline}</p>
+                <p className="mb-4 font-bold text-[#4A3428]/50 text-[10px] line-clamp-2 grow">{item.tagline}</p>
 
                 <div className="mb-4">
                   <span className="font-black text-[#8B4513] text-xl">{formatPrice(item.price)}</span>
                 </div>
 
-                <div className="flex justify-between items-center mt-auto pt-4 border-amber-50 border-t">
-                  <span className="font-black text-amber-600 text-xs">5.0 ⭐</span>
+                <div className="flex justify-end items-center mt-auto pt-4 border-amber-50 border-t">
                   {qty === 0 ? (
                     <button
                       onClick={() => onAddToCart(item)}
@@ -128,7 +128,7 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
                       >
                         -
                       </button>
-                      <span className="min-w-[20px] font-black text-[#8B4513] text-sm text-center">
+                      <span className="min-w-5 font-black text-[#8B4513] text-sm text-center">
                         {qty}
                       </span>
                       <button
