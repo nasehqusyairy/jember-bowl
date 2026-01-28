@@ -59,7 +59,7 @@ const PromoCarousel: React.FC<PromoCarouselProps> = ({ onAddToCart, onRemoveFrom
 
                     {/* Terpakai Badge - Only appears when claimed */}
                     {claimed && (
-                      <div className="top-3 right-3 z-10 absolute bg-gray-500 shadow-lg px-4 py-1.5 rounded-full font-black text-[10px] text-white uppercase">
+                      <div className="top-3 right-3 z-10 absolute bg-green-600 shadow-lg px-4 py-1.5 rounded-full font-black text-[10px] text-white uppercase">
                         TERPAKAI
                       </div>
                     )}
