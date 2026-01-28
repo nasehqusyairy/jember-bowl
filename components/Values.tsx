@@ -9,11 +9,11 @@ const Values: React.FC = () => {
       icon: "🍱",
       description: 'Ricebowl dengan penyajian yang super lengkap mulai dari nasi, ayam, baluran saus, telur beserta sayuran lengkap.'
     },
-    {
-      title: 'HIGIENIS',
-      icon: "✨",
-      description: 'Menyajikan makanan secara higienis sesuai SOP sekaligus menyediakan alat makan lengkap mulai dari sendok hingga tissue.'
-    },
+    // {
+    //   title: 'HIGIENIS',
+    //   icon: "✨",
+    //   description: 'Menyajikan makanan secara higienis sesuai SOP sekaligus menyediakan alat makan lengkap mulai dari sendok hingga tissue.'
+    // },
     {
       title: 'KENYANG',
       icon: "🔥",
@@ -22,26 +22,29 @@ const Values: React.FC = () => {
   ];
 
   return (
-    <section id={SectionId.VALUES} className="py-32 px-6 bg-[#8B4513] text-white overflow-hidden relative">
+    <section id={SectionId.VALUES} className="relative bg-[#8B4513] px-6 py-32 overflow-hidden text-white">
       {/* Decorative large background text */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[30vw] font-black opacity-[0.03] whitespace-nowrap pointer-events-none uppercase">
+      <div className="top-1/2 left-1/2 absolute opacity-[0.03] font-black text-[30vw] uppercase whitespace-nowrap -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         QUALITY
       </div>
 
-      <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h2 className="text-[#D49A1F] text-xl font-black mb-4 uppercase tracking-[0.5em]">Keunggulan Kami</h2>
-        <h3 className="text-6xl lg:text-8xl font-black mb-24 tracking-tighter uppercase leading-none">
+      <div className="z-10 relative mx-auto max-w-7xl text-center">
+        {/* <h2 className="mb-4 font-black text-[#D49A1F] text-xl uppercase tracking-[0.5em]">Komitmen Kami</h2> */}
+        {/* <h3 className="mb-24 font-black text-6xl lg:text-8xl uppercase leading-none tracking-tighter">
           JEMBER BOWL <br /> <span className="text-[#D49A1F]">STANDARD</span>
-        </h3>
-        
-        <div className="grid md:grid-cols-3 gap-8">
+        </h3> */}
+        <h2 className="mb-24 font-black text-6xl lg:text-8xl uppercase leading-none tracking-tighter">
+          Komitmen <span className="text-[#D49A1F]">Kami</span>
+        </h2>
+
+        <div className="gap-8 grid md:grid-cols-2">
           {values.map((v, i) => (
-            <div key={i} className="bg-white/5 border border-white/10 p-12 rounded-[3rem] backdrop-blur-md hover:bg-white/10 transition-all group text-left">
-              <div className="text-7xl mb-8 transform group-hover:-rotate-12 transition-transform duration-500 inline-block">
+            <div key={i} className="group bg-white/5 hover:bg-white/10 backdrop-blur-md p-12 border border-white/10 rounded-[3rem] text-left transition-all">
+              <div className="inline-block mb-8 text-7xl group-hover:-rotate-12 transition-transform duration-500 transform">
                 {v.icon}
               </div>
-              <h4 className="text-3xl font-black text-[#D49A1F] mb-6 uppercase tracking-tight">{v.title}</h4>
-              <p className="text-lg opacity-70 leading-relaxed font-medium">
+              <h4 className="mb-6 font-black text-[#D49A1F] text-3xl uppercase tracking-tight">{v.title}</h4>
+              <p className="opacity-70 font-medium text-lg leading-relaxed">
                 {v.description}
               </p>
             </div>

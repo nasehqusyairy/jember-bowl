@@ -1,5 +1,6 @@
 
 export interface MenuItem {
+  type: number;
   id: string;
   name: string;
   rating: number;

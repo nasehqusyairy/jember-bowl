@@ -26,7 +26,7 @@ const About: React.FC = () => {
             </h3>
             <div className="bg-[#D49A1F] mb-8 w-24 h-2"></div>
             <p className="opacity-80 font-medium text-[#4A3428] text-xl leading-relaxed">
-              Berdiri sejak tahun 2024, Jember Bowl hadir untuk membawa cita rasa otentik ke dalam format modern. Kami percaya bahwa makanan enak haruslah disajikan dengan standar kebersihan tertinggi.
+              Siapa bilang rasa otentik harus selalu tampil klasik? Dimulai dari Jember pada tahun 2024, Jember Bowl sukses melakukan modernisasi terhadap kuliner kebanggaan kami, menghadirkan selera lokal dalam kemasan yang lebih segar dan kekinian.
             </p>
           </div>
 
@@ -40,10 +40,6 @@ const About: React.FC = () => {
               <p className="mt-2 font-black text-[#8B4513] text-xs uppercase tracking-widest">Tahun Berdiri</p>
             </div>
           </div>
-
-          <p className="font-bold text-[#4A3428] text-lg italic">
-            "Bukan sekadar nasi dalam mangkuk, tapi sebuah komitmen untuk rasa dan kualitas."
-          </p>
         </div>
       </div>
     </section>
