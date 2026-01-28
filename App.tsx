@@ -37,7 +37,6 @@ const App: React.FC = () => {
         isPromo: isPromo
       }];
     });
-    // setIsCartOpen(true);
   };
 
   const removeFromCart = (id: string) => {
@@ -46,15 +45,23 @@ const App: React.FC = () => {
 
   const updateQuantity = (id: string, delta: number) => {
     setCart((prev) =>
-      prev.map((i) => {
+      prev.reduce((acc, i) => {
         if (i.id === id) {
           // Promo item tidak bisa ditambah kuantitasnya
-          if (i.isPromo && delta > 0) return i;
-          const newQty = Math.max(1, i.quantity + delta);
-          return { ...i, quantity: newQty };
+          if (i.isPromo && delta > 0) {
+            acc.push(i);
+            return acc;
+          }
+          const newQty = i.quantity + delta;
+          if (newQty > 0) {
+            acc.push({ ...i, quantity: newQty });
+          }
+          // if newQty is 0, item is not pushed (removed)
+        } else {
+          acc.push(i);
         }
-        return i;
-      })
+        return acc;
+      }, [] as CartItem[])
     );
   };
 
@@ -68,11 +75,18 @@ const App: React.FC = () => {
         <hr className="border border-[#8B4513] border-dashed" />
         <About />
         <Values />
-        <Menu onAddToCart={addToCart} />
-        <PromoCarousel onAddToCart={addToCart} />
+        <Menu
+          onAddToCart={addToCart}
+          cart={cart}
+          onUpdateQuantity={updateQuantity}
+        />
+        <PromoCarousel
+          onAddToCart={addToCart}
+          onRemoveFromCart={removeFromCart}
+          cart={cart}
+        />
         <OrderSection />
       </main>
-      <hr className="border border-[#8B4513] border-dashed" />
       <Footer />
 
       <Cart

@@ -1,14 +1,15 @@
-import placeholder from '@/images/placeholder.jpg'
 
 import React, { useState } from 'react';
-import { SectionId, MenuItem } from '../types';
+import { SectionId, MenuItem, CartItem } from '../types';
 import { MENU_ITEMS } from '../constants';
 
 interface MenuProps {
   onAddToCart: (item: MenuItem) => void;
+  cart: CartItem[];
+  onUpdateQuantity: (id: string, delta: number) => void;
 }
 
-const Menu: React.FC<MenuProps> = ({ onAddToCart }) => {
+const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
   const [search, setSearch] = useState('');
   const [activeType, setActiveType] = useState<number>(-1); // -1 for "Semua"
 
@@ -35,20 +36,24 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart }) => {
     }).format(price);
   };
 
+  const getItemQuantity = (id: string) => {
+    const item = cart.find(c => c.id === id);
+    return item ? item.quantity : 0;
+  };
+
   return (
     <section id={SectionId.MENU} className="bg-[#FDFCE6] px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center mb-12 text-center">
-          {/* <h2 className="mb-2 font-bold text-[#8B4513] text-xl italic">Hello, #temanjemberbowl</h2> */}
-          {/* <h3 className="mb-4 font-black text-[#8B4513] text-5xl uppercase tracking-tighter">DAFTAR MENU SUMBERSARI</h3> */}
-          {/* <p className="mb-12 font-bold text-[#8B4513]/60 text-sm uppercase tracking-[0.2em]">Puas • Kenyang</p> */}
-          <h2 className="mb-12 font-black text-[#8B4513] text-5xl uppercase tracking-tighter">DAFTAR MENU</h2>
+          <h2 className="mb-2 font-bold text-[#8B4513] text-xl italic">Hello, #temanjemberbowl</h2>
+          <h3 className="mb-4 font-black text-[#8B4513] text-5xl uppercase tracking-tighter">DAFTAR MENU SUMBERSARI</h3>
+          <p className="mb-12 font-bold text-[#8B4513]/60 text-sm uppercase tracking-[0.2em]">Puas • Kenyang • Higienis</p>
 
           <div className="relative mb-12 w-full max-w-xl">
             <input
               type="text"
               placeholder="Cari menu favoritmu..."
-              className="bg-white px-8 py-5 border-[#8B4513]/10 border-4 focus:border-[#D49A1F] rounded-2xl focus:outline-none w-full text-lg transition-all"
+              className="bg-white shadow-xl px-8 py-5 border-[#8B4513]/10 border-4 focus:border-[#D49A1F] rounded-2xl focus:outline-none w-full text-lg transition-all"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -77,42 +82,67 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart }) => {
           </div>
         </div>
 
-        <div className="gap-2 lg:gap-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 min-h-[400px]">
-          {filtered.map((item) => (
-            <div key={item.id} className="group flex flex-col bg-white shadow-xl p-4 border-[#D49A1F]/20 border-b-8 rounded-[2rem] h-full transition-all hover:-translate-y-2">
-              <div className="relative bg-amber-50 mb-4 rounded-2xl aspect-square overflow-hidden">
-                <img src={item.image || placeholder} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                {item.isPopular && (
-                  <div className="top-3 right-3 z-10 absolute bg-[#D49A1F] shadow-lg px-3 py-1 rounded-full font-black text-[10px] text-white uppercase">FAVORIT</div>
-                )}
-                <div className="absolute inset-0 flex justify-center items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button
-                    onClick={() => onAddToCart(item)}
-                    className="bg-white shadow-xl px-6 py-3 rounded-full font-black text-[#8B4513] text-sm transition-all translate-y-4 group-hover:translate-y-0 transform"
-                  >
-                    + TAMBAH
-                  </button>
+        <div className="gap-4 lg:gap-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-16 min-h-[400px]">
+          {filtered.map((item) => {
+            const qty = getItemQuantity(item.id);
+            return (
+              <div key={item.id} className="group flex flex-col bg-white shadow-xl p-4 border-[#D49A1F]/20 border-b-8 rounded-[2rem] h-full transition-all hover:-translate-y-2">
+                <div className="relative bg-amber-50 mb-4 rounded-2xl aspect-square overflow-hidden">
+                  <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  {item.isPopular && (
+                    <div className="top-3 right-3 z-10 absolute bg-[#D49A1F] shadow-lg px-3 py-1 rounded-full font-black text-[10px] text-white uppercase">FAVORIT</div>
+                  )}
+                  {qty === 0 && (
+                    <div className="absolute inset-0 flex justify-center items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <button
+                        onClick={() => onAddToCart(item)}
+                        className="bg-white shadow-xl px-6 py-3 rounded-full font-black text-[#8B4513] text-sm transition-all translate-y-4 group-hover:translate-y-0 transform"
+                      >
+                        + TAMBAH
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                <h4 className="mb-1 font-black text-[#8B4513] text-lg leading-tight">{item.name}</h4>
+                <p className="flex-grow mb-4 font-bold text-[#4A3428]/50 text-[10px] line-clamp-2">{item.tagline}</p>
+
+                <div className="mb-4">
+                  <span className="font-black text-[#8B4513] text-xl">{formatPrice(item.price)}</span>
+                </div>
+
+                <div className="flex justify-between items-center mt-auto pt-4 border-amber-50 border-t">
+                  <span className="font-black text-amber-600 text-xs">5.0 ⭐</span>
+                  {qty === 0 ? (
+                    <button
+                      onClick={() => onAddToCart(item)}
+                      className="bg-[#8B4513] hover:bg-[#D49A1F] ml-auto md:ml-0 px-6 py-2 rounded-xl font-bold text-white text-xs uppercase tracking-widest transition-colors"
+                    >
+                      BELI
+                    </button>
+                  ) : (
+                    <div className="flex items-center gap-2 bg-[#8B4513]/5 ml-auto md:ml-0 p-1 border border-[#8B4513]/10 rounded-xl">
+                      <button
+                        onClick={() => onUpdateQuantity(item.id, -1)}
+                        className="flex justify-center items-center bg-white shadow-sm rounded-lg w-7 h-7 font-black text-[#8B4513] active:scale-90 transition-all"
+                      >
+                        -
+                      </button>
+                      <span className="min-w-[20px] font-black text-[#8B4513] text-sm text-center">
+                        {qty}
+                      </span>
+                      <button
+                        onClick={() => onUpdateQuantity(item.id, 1)}
+                        className="flex justify-center items-center bg-[#8B4513] shadow-sm rounded-lg w-7 h-7 font-black text-white active:scale-90 transition-all"
+                      >
+                        +
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
-
-              <h4 className="mb-1 font-black text-[#8B4513] text-lg leading-tight">{item.name}</h4>
-              <p className="flex-grow mb-4 font-bold text-[#4A3428]/50 text-[10px] line-clamp-2">{item.tagline}</p>
-
-              <div className="mb-4">
-                <span className="font-black text-[#8B4513] text-xl">{formatPrice(item.price)}</span>
-              </div>
-
-              <div className="flex justify-between items-center mt-auto pt-4 border-amber-50 border-t">
-                <span className="font-black text-amber-600 text-xs">5.0 ⭐</span>
-                <button
-                  onClick={() => onAddToCart(item)}
-                  className="bg-[#8B4513] hover:bg-[#D49A1F] px-6 py-2 rounded-xl font-bold text-white text-xs uppercase tracking-widest transition-colors"
-                >
-                  BELI
-                </button>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {filtered.length === 0 && (
@@ -137,4 +167,3 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart }) => {
 };
 
 export default Menu;
-

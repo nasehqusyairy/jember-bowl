@@ -16,48 +16,12 @@ export const HERO_IMAGES = [
 // MENU_ITEMS list based on the provided data, ensuring all required fields like 'price' are present.
 export const MENU_ITEMS: MenuItem[] = [
   {
-    "id": "11",
-    "name": "Sego Bongkoes",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025071004453224576/detail/menueditor_item_1bd8b82a6e8449438c44bd36f915268b_1754448839458594662.webp",
-    "tagline": "Nasi Putih dengan telur mata sapi yang disiram dengan baluran bumbu khas dan dibungkus dengan bongkoesan khas jemberbowl",
-    "price": 17000,
-    "type": 0
-  },
-  {
     "id": "12",
     "name": "Korean Spicy",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070904574216425/detail/menueditor_item_c921fcfe4a4e480e8cc91ca642510868_1769075479473268401.webp",
     "tagline": "Nasi putih dibaluri ayam renyah, Scrambel Egg, saos Korean Spicy dan sayuran timun segar.",
     "price": 20000,
-    "type": 0
-  },
-  {
-    "id": "13",
-    "name": "Mie Bowl Salted Egg",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025011101584550592/detail/menueditor_item_d6556d122d724d339a090e9a064be4b4_1768971895542349723.webp",
-    "tagline": "Mie Goreng, Ayam Crispy dibalur Salted Egg, Scramble Egg, sayuran",
-    "price": 21000,
-    "type": 0
-  },
-  {
-    "id": "14",
-    "name": "Miebowl Geprek",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025010702025707522/detail/menueditor_item_3bc404dcd7c1403bacb9ffbfc47f6843_1736215354167606494.webp",
-    "tagline": "Mie goreng dengan campuran ayam geprek renyah dan sayuran segar.",
-    "price": 23000,
-    "type": 0
-  },
-  {
-    "id": "15",
-    "name": "Ayam Geprek",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024060903522364950/detail/menueditor_item_7d232acd365b4eab8e286a68e9c29eba_1768969874958845867.webp",
-    "tagline": "Nasi, Ayam Crispy, Scramble Egg, Sambel Geprek, Sayuran Timun",
-    "price": 22000,
     "type": 0
   },
   {
@@ -97,12 +61,21 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 0
   },
   {
-    "id": "20",
-    "name": "Nasi Ayam Kipas Jember Bowl",
+    "id": "22",
+    "name": "Chicken Cheese",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110206110815687/detail/menueditor_item_1e0f5c1bfd4b49769c96d19deef22154_1765437509072112375.webp",
-    "tagline": "Nasi putih dengan ayam kipas gurih, sambal bawang dan sayuran segar",
-    "price": 28000,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070905012035338/detail/menueditor_item_be6834fcd21e4059b18ab02dcfa242ff_1754448953431278490.webp",
+    "tagline": "Ayam crispy, keju leleh, nasi pulen, sayuran timun segar.",
+    "price": 20000,
+    "type": 0
+  },
+  {
+    "id": "15",
+    "name": "Ayam Geprek",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024060903522364950/detail/menueditor_item_7d232acd365b4eab8e286a68e9c29eba_1768969874958845867.webp",
+    "tagline": "Nasi, Ayam Crispy, Scramble Egg, Sambel Geprek, Sayuran Timun",
+    "price": 22000,
     "type": 0
   },
   {
@@ -115,21 +88,30 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 0
   },
   {
-    "id": "22",
-    "name": "Chicken Cheese",
+    "id": "10",
+    "name": "Box Nasi Ayam Geprek",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070905012035338/detail/menueditor_item_be6834fcd21e4059b18ab02dcfa242ff_1754448953431278490.webp",
-    "tagline": "Ayam crispy, keju leleh, nasi pulen, sayuran timun segar.",
-    "price": 20000,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110503452191585/detail/menueditor_item_256bec9bc99f4370bd5f0c48584c0738_1762749234729221164.webp",
+    "tagline": "Nasi ayam geprek , renyah dan lezat, sambal khas menggoda selera. ( Tanpa Scramble Egg )",
+    "price": 23000,
     "type": 0
   },
   {
-    "id": "24",
-    "name": "Ayam Suwir khas Jember Bowl",
+    "id": "20",
+    "name": "Nasi Ayam Kipas Jember Bowl",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024120203062968737/detail/menueditor_item_395763a35f0749ba82e2167a4f054bba_1754448697917625533.webp",
-    "tagline": "Nasi, Plecing Ayam Suwir Bumbu Kuning, Scrambel Egg, sayuran Timun",
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110206110815687/detail/menueditor_item_1e0f5c1bfd4b49769c96d19deef22154_1765437509072112375.webp",
+    "tagline": "Nasi putih dengan ayam kipas gurih, sambal bawang dan sayuran segar",
     "price": 28000,
+    "type": 0
+  },
+  {
+    "id": "27",
+    "name": "Cumi Ciamik",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050204001720431/detail/menueditor_item_5cec3baf15ce4a21be0a4632aaa5516f_1714622356662230545.webp",
+    "tagline": "Nasi, Cumi Bumbu Hitam, Scramble Egg, Sayuran",
+    "price": 30000,
     "type": 0
   },
   {
@@ -142,15 +124,6 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 0
   },
   {
-    "id": "27",
-    "name": "Cumi Ciamik",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050204001720431/detail/menueditor_item_5cec3baf15ce4a21be0a4632aaa5516f_1714622356662230545.webp",
-    "tagline": "Nasi, Cumi Bumbu Hitam, Scramble Egg, Sayuran",
-    "price": 18000,
-    "type": 0
-  },
-  {
     "id": "25",
     "name": "Kerang Asam Pedas",
     "rating": 5,
@@ -160,30 +133,30 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 0
   },
   {
-    "id": "2",
-    "name": "Nasi Putih",
+    "id": "24",
+    "name": "Ayam Suwir khas Jember Bowl",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66DCGB3JAWKTX8913.webp",
-    "tagline": "Nasi putih lembut, cocok dipadukan dengan berbagai lauk favorit.",
-    "price": 5000,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024120203062968737/detail/menueditor_item_395763a35f0749ba82e2167a4f054bba_1754448697917625533.webp",
+    "tagline": "Nasi, Plecing Ayam Suwir Bumbu Kuning, Scrambel Egg, sayuran Timun",
+    "price": 28000,
     "type": 0
   },
   {
-    "id": "3",
-    "name": "Smothies Banana",
+    "id": "13",
+    "name": "Mie Bowl Salted Egg",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026010803221482906/detail/menueditor_item_0a7c9edf571d441486e5dd39fc88c25e_1767842436916244042.webp",
-    "tagline": "Pisang Cavendish, susu segar, dan tekstur lembut seperti ice cream dan manis yang alami.",
-    "price": 20000,
-    "type": 1
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025011101584550592/detail/menueditor_item_d6556d122d724d339a090e9a064be4b4_1768971895542349723.webp",
+    "tagline": "Mie Goreng, Ayam Crispy dibalur Salted Egg, Scramble Egg, sayuran",
+    "price": 21000,
+    "type": 0
   },
   {
-    "id": "4",
-    "name": "Manggo Sticky Rice",
+    "id": "14",
+    "name": "Miebowl Geprek",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025112708161025091/detail/menueditor_item_2fb82de4652747429f3b686d34da3f19_1764231329965579560.webp",
-    "tagline": "Mangga manis, ketan lembut, santan segar. Penuh rasa tropis.",
-    "price": 28000,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025010702025707522/detail/menueditor_item_3bc404dcd7c1403bacb9ffbfc47f6843_1736215354167606494.webp",
+    "tagline": "Mie goreng dengan campuran ayam geprek renyah dan sayuran segar.",
+    "price": 23000,
     "type": 0
   },
   {
@@ -214,12 +187,48 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 0
   },
   {
-    "id": "10",
-    "name": "Box Nasi Ayam Geprek",
+    "id": "11",
+    "name": "Sego Bongkoes",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110503452191585/detail/menueditor_item_256bec9bc99f4370bd5f0c48584c0738_1762749234729221164.webp",
-    "tagline": "Nasi ayam geprek , renyah dan lezat, sambal khas menggoda selera. ( Tanpa Scramble Egg )",
-    "price": 23000,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025071004453224576/detail/menueditor_item_1bd8b82a6e8449438c44bd36f915268b_1754448839458594662.webp",
+    "tagline": "Nasi Putih dengan telur mata sapi yang disiram dengan baluran bumbu khas dan dibungkus dengan bongkoesan khas jemberbowl",
+    "price": 17000,
+    "type": 0
+  },
+  {
+    "id": "44",
+    "name": "Kerupuk Ikan Merah",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026011303552541909/detail/menueditor_item_f7996635a9034cc9b454118b9727e604_1768276466634477399.webp",
+    "tagline": "Kerupuk Ikan Merah Kecil Kecil Yang Renyah, Gurih dan Sedap untuk sandingan Ricebowl / Cajo",
+    "price": 6000,
+    "type": 2
+  },
+  {
+    "id": "46",
+    "name": "Kerupuk Keong",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C6LZTCAJA261AT2926.webp",
+    "tagline": "Kerupuk Keong, gurih dan renyah.",
+    "price": 2500,
+    "type": 2
+  },
+  {
+    "id": "3",
+    "name": "Smothies Banana",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026010803221482906/detail/menueditor_item_0a7c9edf571d441486e5dd39fc88c25e_1767842436916244042.webp",
+    "tagline": "Pisang Cavendish, susu segar, dan tekstur lembut seperti ice cream dan manis yang alami.",
+    "price": 20000,
+    "type": 1
+  },
+  {
+    "id": "4",
+    "name": "Manggo Sticky Rice",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025112708161025091/detail/menueditor_item_2fb82de4652747429f3b686d34da3f19_1764231329965579560.webp",
+    "tagline": "Mangga manis, ketan lembut, santan segar. Penuh rasa tropis.",
+    "price": 28000,
     "type": 0
   },
   {
@@ -304,22 +313,13 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 1
   },
   {
-    "id": "44",
-    "name": "Kerupuk Ikan Merah",
+    "id": "2",
+    "name": "Nasi Putih",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026011303552541909/detail/menueditor_item_f7996635a9034cc9b454118b9727e604_1768276466634477399.webp",
-    "tagline": "Kerupuk Ikan Merah Kecil Kecil Yang Renyah, Gurih dan Sedap untuk sandingan Ricebowl / Cajo",
-    "price": 6000,
-    "type": 2
-  },
-  {
-    "id": "46",
-    "name": "Kerupuk Keong",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C6LZTCAJA261AT2926.webp",
-    "tagline": "Kerupuk Keong, gurih dan renyah.",
-    "price": 2500,
-    "type": 2
+    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66DCGB3JAWKTX8913.webp",
+    "tagline": "Nasi putih lembut, cocok dipadukan dengan berbagai lauk favorit.",
+    "price": 5000,
+    "type": 0
   }
 ]
 
@@ -339,13 +339,13 @@ export const PROMO_ITEMS: PromoItem[] = [
     image: promoBundlingImage,
     price: 25000
   },
-  {
-    id: "p3",
-    title: "Valentine's Day Promo",
-    description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
-    image: promoValentineImage,
-    price: 40000
-  }
+  // {
+  //   id: "p3",
+  //   title: "Valentine's Day Promo",
+  //   description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
+  //   image: promoValentineImage,
+  //   price: 40000
+  // }
 ];
 
 // CONTACT_INFO used in Footer, Cart, and OrderSection
