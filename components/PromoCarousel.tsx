@@ -33,7 +33,7 @@ const PromoCarousel: React.FC<PromoCarouselProps> = ({ onAddToCart }) => {
 
         {/* Horizontal Scroll Container */}
         <div className="relative">
-          <div className="flex justify-center gap-6 pb-12 overflow-x-auto snap-mandatory snap-x scrollbar-hide no-scrollbar">
+          <div className="flex lg:justify-center gap-6 pb-12 overflow-x-auto snap-mandatory snap-x scrollbar-hide no-scrollbar">
             {PROMO_ITEMS.map((promo) => (
               <div
                 key={promo.id}
@@ -44,9 +44,6 @@ const PromoCarousel: React.FC<PromoCarouselProps> = ({ onAddToCart }) => {
                     src={promo.image}
                     alt={promo.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://via.placeholder.com/400x400/8B4513/FFFFFF?text=${encodeURIComponent(promo.title)}`;
-                    }}
                   />
                   {/* Promo Badge */}
                   <div className="top-3 right-3 z-10 absolute bg-[#D49A1F] shadow-lg px-4 py-1.5 rounded-full font-black text-[10px] text-white uppercase animate-pulse">
