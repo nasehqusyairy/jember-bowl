@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <img
               src={aboutImage}
               alt="Dapur Jember Bowl"
-              className="shadow-2xl rounded-[3rem] w-full object-cover aspect-[4/5] group-hover:scale-[1.02] transition-transform duration-700"
+              className="shadow-2xl rounded-[3rem] w-full object-cover aspect-4/5 group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         </div>
