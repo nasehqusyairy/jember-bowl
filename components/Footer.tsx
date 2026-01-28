@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             <img src={logo} alt="logo" className='h-12' />
 
 
-            <p className="font-medium text-[#4A3428]/70">Rice Bowl asli Kota Jember yang siap memanjakan dengan pengalaman makan kenyang dan puas!</p>
+            <p className="font-medium text-[#4A3428]/70">Rice Bowl asli Kota Jember yang siap memanjakan dengan pengalaman makan kenyang, puas, dan higienis!</p>
             <div className="flex items-center gap-4 bg-white shadow-sm p-6 border-[#8B4513]/5 border-2 rounded-3xl">
               <img src={'https://upload.wikimedia.org/wikipedia/commons/1/1c/Halal_Indonesia.svg'} alt="Halal" className="h-12" />
               <p className="font-black text-[#8B4513] text-[10px] uppercase leading-tight">Certified Halal<br /><span className="text-amber-600">{CONTACT_INFO.halalId}</span></p>
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             <h4 className="mb-8 font-black text-[#8B4513] text-xl uppercase tracking-widest">Media Sosial</h4>
             <div className="flex flex-col gap-3">
               <a href="#" className="font-bold text-[#8B4513] hover:text-[#D49A1F] transition-colors">Instagram: @jemberbowl</a>
-              <a href="#" className="font-bold text-[#8B4513] hover:text-[#D49A1F] transition-colors">TikTok: @Jember.bowl</a>
+              <a href="#" className="font-bold text-[#8B4513] hover:text-[#D49A1F] transition-colors">TikTok: @jemberbowl </a>
             </div>
           </div>
 

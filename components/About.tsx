@@ -13,8 +13,6 @@ const About: React.FC = () => {
               alt="Dapur Jember Bowl"
               className="shadow-2xl rounded-[3rem] w-full object-cover aspect-[4/5] group-hover:scale-[1.02] transition-transform duration-700"
             />
-            {/* Decorative element */}
-            <div className="-right-10 -bottom-10 -z-10 absolute bg-[#D49A1F] opacity-20 rounded-[3rem] w-64 h-64"></div>
           </div>
         </div>
 
@@ -33,7 +31,7 @@ const About: React.FC = () => {
           <div className="gap-10 grid grid-cols-2">
             <div className="py-2 pl-6 border-[#D49A1F] border-l-4">
               <p className="font-black text-[#8B4513] text-5xl">100%</p>
-              <p className="mt-2 font-black text-[#D49A1F] text-xs uppercase tracking-widest">Bahan Segar</p>
+              <p className="mt-2 font-black text-[#D49A1F] text-xs uppercase tracking-widest">Bahan Pilihan</p>
             </div>
             <div className="py-2 pl-6 border-[#8B4513] border-l-4">
               <p className="font-black text-[#D49A1F] text-5xl">2024</p>

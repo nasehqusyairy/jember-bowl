@@ -3,98 +3,18 @@ import paketBerduaImage from './images/paket-berdua.jpeg'
 import promoBundlingImage from './images/promo-bundling.jpeg'
 import promoValentineImage from './images/promo-valentine.jpeg'
 
+import post1 from '@/images/post1.jpeg'
+import post2 from '@/images/post2.jpeg'
+import post3 from '@/images/post3.jpeg'
+import post4 from '@/images/post4.jpeg'
+
+// Gambar untuk Hero Carousel
+export const HERO_IMAGES = [
+  post1, post2, post3, post4
+];
+
 // MENU_ITEMS list based on the provided data, ensuring all required fields like 'price' are present.
 export const MENU_ITEMS: MenuItem[] = [
-  {
-    "id": "1",
-    "name": "Ayam Crispy ( Tanpa Nasi )",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110503383241722/detail/menueditor_item_f3f19a9beaa64ebdb916fa9cb1b99f10_1762313807862339963.webp",
-    "tagline": "Ayam crispy renyah dengan bumbu gurih dan tekstur lembut.",
-    "price": 17000,
-    "type": 0
-  },
-  {
-    "id": "2",
-    "name": "Nasi Putih",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66DCGB3JAWKTX8913.webp",
-    "tagline": "Nasi putih lembut, cocok dipadukan dengan berbagai lauk favorit.",
-    "price": 5000,
-    "type": 0
-  },
-  {
-    "id": "3",
-    "name": "Smothies Banana",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026010803221482906/detail/menueditor_item_0a7c9edf571d441486e5dd39fc88c25e_1767842436916244042.webp",
-    "tagline": "Pisang Cavendish, susu segar, dan tekstur lembut seperti ice cream dan manis yang alami.",
-    "price": 20000,
-    "type": 1
-  },
-  {
-    "id": "4",
-    "name": "Manggo Sticky Rice",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025112708161025091/detail/menueditor_item_2fb82de4652747429f3b686d34da3f19_1764231329965579560.webp",
-    "tagline": "Mangga manis, ketan lembut, santan segar. Penuh rasa tropis.",
-    "price": 28000,
-    "type": 0
-  },
-  {
-    "id": "5",
-    "name": "Cireng Brutal",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66CGUE1CVMBWE6893.webp",
-    "tagline": "Cireng renyah diisi ayam bumbu spesial (isi 4)",
-    "price": 15000,
-    "type": 0
-  },
-  {
-    "id": "6",
-    "name": "MaySiomay (Goreng)",
-    "rating": 5,
-    "image": null,
-    "tagline": "Siomay ayam lezat dengan campuran udang dan bertopping sayuran segar, dan saus sambal pedas. (isi 3)",
-    "price": 18000,
-    "type": 0
-  },
-  {
-    "id": "7",
-    "name": "Nasi Kulit Cajo",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121502210265455/detail/menueditor_item_8fac1d906953427d9229e6f38bfd211a_1765765327764893391.webp",
-    "tagline": "Nasi dengan kulit ayam, gurih dan beraroma rempah khas Indonesia.",
-    "price": 22000,
-    "type": 0
-  },
-  {
-    "id": "8",
-    "name": "Telur Cajo (Sambal Ijo)",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121107091445032/detail/menueditor_item_b4c796dc1eec46ab9f9dade12ddf6c97_1765436877672773795.webp",
-    "tagline": "Telur dadar dengan sambal ijo pedas dan segar.",
-    "price": 20000,
-    "type": 0
-  },
-  {
-    "id": "9",
-    "name": "Ayam Penyet Cajo (Sambel Ijo)",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121107051631835/detail/menueditor_item_533c48fd96b4474886c9be85a575bdaa_1765436664330737863.webp",
-    "tagline": "Ayam goreng penyet, sambel ijo segar, nasi pulen, cocok untuk santapan lezat.",
-    "price": 28000,
-    "type": 0
-  },
-  {
-    "id": "10",
-    "name": "Box Nasi Ayam Geprek",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110503452191585/detail/menueditor_item_256bec9bc99f4370bd5f0c48584c0738_1762749234729221164.webp",
-    "tagline": "Nasi ayam geprek , renyah dan lezat, sambal khas menggoda selera. ( Tanpa Scramble Egg )",
-    "price": 23000,
-    "type": 0
-  },
   {
     "id": "11",
     "name": "Sego Bongkoes",
@@ -106,7 +26,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "12",
-    "name": "Korean Hot Spicy Rice Bowl",
+    "name": "Korean Spicy",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070904574216425/detail/menueditor_item_c921fcfe4a4e480e8cc91ca642510868_1769075479473268401.webp",
     "tagline": "Nasi putih dibaluri ayam renyah, Scrambel Egg, saos Korean Spicy dan sayuran timun segar.",
@@ -187,29 +107,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "21",
-    "name": "Wings Rice Bowl",
+    "name": "Wings",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070905262586468/detail/menueditor_item_0a10457be1d640108ce916b91e025fa4_1752038746800423278.webp",
-    "tagline": "Nasi Sayap ayam crispy dibaluri dengan berbagai sauce yang menggugah selera",
+    "tagline": "Sayap ayam crispy dibaluri dengan berbagai sauce yang menggugah selera dengan nasi",
     "price": 26000,
     "type": 0
   },
   {
     "id": "22",
-    "name": "Chicken Cheese Rice Bowl",
+    "name": "Chicken Cheese",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070905012035338/detail/menueditor_item_be6834fcd21e4059b18ab02dcfa242ff_1754448953431278490.webp",
     "tagline": "Ayam crispy, keju leleh, nasi pulen, sayuran timun segar.",
     "price": 20000,
-    "type": 0
-  },
-  {
-    "id": "23",
-    "name": "Wings Bowl",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025050401311938254/detail/menueditor_item_f4b757c034304acaae6925582bcf597b_1752037108490470583.webp",
-    "tagline": "Sayap ayam crispy dibaluri dengan berbagai sauce yang menggugah selera. (tanpa nasi)",
-    "price": 26500,
     "type": 0
   },
   {
@@ -246,6 +157,69 @@ export const MENU_ITEMS: MenuItem[] = [
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024102602080830912/detail/menueditor_item_7f6dfda6278742eb88f7b76bf1d080f8_1754448741189472324.webp",
     "tagline": "Nasi, Kerang bumbu asam pedas, Scrambled Egg, Saos Black Pepper, Sayuran.",
     "price": 30000,
+    "type": 0
+  },
+  {
+    "id": "2",
+    "name": "Nasi Putih",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66DCGB3JAWKTX8913.webp",
+    "tagline": "Nasi putih lembut, cocok dipadukan dengan berbagai lauk favorit.",
+    "price": 5000,
+    "type": 0
+  },
+  {
+    "id": "3",
+    "name": "Smothies Banana",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026010803221482906/detail/menueditor_item_0a7c9edf571d441486e5dd39fc88c25e_1767842436916244042.webp",
+    "tagline": "Pisang Cavendish, susu segar, dan tekstur lembut seperti ice cream dan manis yang alami.",
+    "price": 20000,
+    "type": 1
+  },
+  {
+    "id": "4",
+    "name": "Manggo Sticky Rice",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025112708161025091/detail/menueditor_item_2fb82de4652747429f3b686d34da3f19_1764231329965579560.webp",
+    "tagline": "Mangga manis, ketan lembut, santan segar. Penuh rasa tropis.",
+    "price": 28000,
+    "type": 0
+  },
+  {
+    "id": "7",
+    "name": "Nasi Kulit Cajo Sambal Ijo",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121502210265455/detail/menueditor_item_8fac1d906953427d9229e6f38bfd211a_1765765327764893391.webp",
+    "tagline": "Nasi dengan kulit ayam, gurih dan beraroma rempah khas Indonesia dengan sambal ijo.",
+    "price": 22000,
+    "type": 0
+  },
+  {
+    "id": "8",
+    "name": "Telur Cajo Sambal Ijo",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121107091445032/detail/menueditor_item_b4c796dc1eec46ab9f9dade12ddf6c97_1765436877672773795.webp",
+    "tagline": "Telur dadar dengan sambal ijo pedas dan segar.",
+    "price": 20000,
+    "type": 0
+  },
+  {
+    "id": "9",
+    "name": "Ayam Penyet Cajo Sambal Ijo",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121107051631835/detail/menueditor_item_533c48fd96b4474886c9be85a575bdaa_1765436664330737863.webp",
+    "tagline": "Ayam goreng penyet, sambal ijo segar, nasi pulen, cocok untuk santapan lezat.",
+    "price": 28000,
+    "type": 0
+  },
+  {
+    "id": "10",
+    "name": "Box Nasi Ayam Geprek",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025110503452191585/detail/menueditor_item_256bec9bc99f4370bd5f0c48584c0738_1762749234729221164.webp",
+    "tagline": "Nasi ayam geprek , renyah dan lezat, sambal khas menggoda selera. ( Tanpa Scramble Egg )",
+    "price": 23000,
     "type": 0
   },
   {
@@ -330,84 +304,12 @@ export const MENU_ITEMS: MenuItem[] = [
     "type": 1
   },
   {
-    "id": "37",
-    "name": "Fruit Tea Blackcurrant",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025061905271407897/detail/menueditor_item_48ddcb4e016c4d439e178041a35e6724_1750310737444762457.webp",
-    "tagline": "Minuman Teh Rasa Blekarent yang manis dan dingin menyegarkan",
-    "price": 10000,
-    "type": 1
-  },
-  {
-    "id": "38",
-    "name": "Fruit tea Blewah",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025041601461481596/detail/menueditor_item_c385d456aedd4617851a41fedeac1614_1744767864314849482.webp",
-    "tagline": "fruit tea blewah 350 ml",
-    "price": 10000,
-    "type": 1
-  },
-  {
-    "id": "39",
-    "name": "Fruit Tea Apple 350ml",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025021302544376724/detail/menueditor_item_c787d8eea24843f8a180f50c104c211d_1739415238529998470.webp",
-    "tagline": "Teh buah segar dengan rasa apel yang menyegarkan.",
-    "price": 9000,
-    "type": 1
-  },
-  {
-    "id": "40",
-    "name": "Fruit Tea Strawberry 350ml",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025021302531358372/detail/menueditor_item_0043aafbc51b459fa525183970026c61_1739415152900412027.webp",
-    "tagline": "Teh buah rasa stroberi yang segar dan manis.",
-    "price": 9000,
-    "type": 1
-  },
-  {
-    "id": "41",
-    "name": "Blue Curacao",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024041705475314428/detail/menueditor_item_ba62281d04034075b5878255ea082918_1713332847352566797.webp",
-    "tagline": "Rasa jeruk segar dengan warna biru cerah.",
-    "price": 15000,
-    "type": 1
-  },
-  {
-    "id": "42",
-    "name": "Green Paradise",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024041705460864822/detail/menueditor_item_8292ef785ee3450781723d46206df7e0_1713332740125803054.webp",
-    "tagline": "Segar dan hijau, rasa unik tropis.",
-    "price": 15000,
-    "type": 1
-  },
-  {
-    "id": "43",
-    "name": "Orange Mocktail",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024041705435897726/detail/menueditor_item_b95c5aa267c24ae8838763aeda85939a_1713332633737456424.webp",
-    "tagline": "Segar dengan rasa jeruk alami.",
-    "price": 15000,
-    "type": 1
-  },
-  {
     "id": "44",
     "name": "Kerupuk Ikan Merah",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026011303552541909/detail/menueditor_item_f7996635a9034cc9b454118b9727e604_1768276466634477399.webp",
     "tagline": "Kerupuk Ikan Merah Kecil Kecil Yang Renyah, Gurih dan Sedap untuk sandingan Ricebowl / Cajo",
     "price": 6000,
-    "type": 2
-  },
-  {
-    "id": "45",
-    "name": "Rempeyek kacang",
-    "rating": 5,
-    "image": null,
-    "tagline": "Rempeyek kacang, keripik renyah dengan kacang tanah dan rempah pedas.",
-    "price": 4000,
     "type": 2
   },
   {
@@ -450,7 +352,7 @@ export const PROMO_ITEMS: PromoItem[] = [
 export const CONTACT_INFO = {
   phone: "6285855747776",
   email: "hello@jemberbowl.com",
-  address: "Jl. Jawa No. 12, Sumbersari, Jember, Jawa Timur",
+  address: "Jl. Panjaitan No.99 Sumbersari Jember, Jawa Timur",
   halalId: "ID35110001234560123",
   grabFoodLink: "https://r.grab.com/g/6-20260127_115014_7d7bfcd5c87e49b39b29b212c266c16d_MEXMPS-6-C6J1EFKWNKX2G2",
   goFoodLink: "https://gofood.link/a/LtxzBdu",

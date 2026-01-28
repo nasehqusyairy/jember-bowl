@@ -1,22 +1,23 @@
 
 import React from 'react';
 import { SectionId } from '../types';
+import { Drumstick, ShieldCheck, Utensils } from 'lucide-react';
 
 const Values: React.FC = () => {
   const values = [
     {
       title: 'PUAS',
-      icon: "🍱",
+      icon: <Utensils size={'4rem'} />,
       description: 'Ricebowl dengan penyajian yang super lengkap mulai dari nasi, ayam, baluran saus, telur beserta sayuran lengkap.'
     },
-    // {
-    //   title: 'HIGIENIS',
-    //   icon: "✨",
-    //   description: 'Menyajikan makanan secara higienis sesuai SOP sekaligus menyediakan alat makan lengkap mulai dari sendok hingga tissue.'
-    // },
+    {
+      title: 'HIGIENIS',
+      icon: <ShieldCheck size={'4rem'} />,
+      description: 'Menyajikan makanan secara higienis sesuai SOP sekaligus menyediakan alat makan lengkap mulai dari sendok hingga tissue.'
+    },
     {
       title: 'KENYANG',
-      icon: "🔥",
+      icon: <Drumstick size={'4rem'} />,
       description: 'Makan satu porsi dipastikan kenyang sebab porsi nasi yang full dan ayam dengan potongan cukup besar.'
     }
   ];
@@ -37,7 +38,7 @@ const Values: React.FC = () => {
           Komitmen <span className="text-[#D49A1F]">Kami</span>
         </h2>
 
-        <div className="gap-8 grid md:grid-cols-2">
+        <div className="gap-8 grid md:grid-cols-3">
           {values.map((v, i) => (
             <div key={i} className="group bg-white/5 hover:bg-white/10 backdrop-blur-md p-12 border border-white/10 rounded-[3rem] text-left transition-all">
               <div className="inline-block mb-8 text-7xl group-hover:-rotate-12 transition-transform duration-500 transform">
