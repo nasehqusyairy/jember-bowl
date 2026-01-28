@@ -37,7 +37,7 @@ const App: React.FC = () => {
         isPromo: isPromo
       }];
     });
-    setIsCartOpen(true);
+    // setIsCartOpen(true);
   };
 
   const removeFromCart = (id: string) => {
