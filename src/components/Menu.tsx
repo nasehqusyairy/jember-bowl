@@ -61,7 +61,7 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
           </div>
 
           {/* Tab Categories */}
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2">
             {categories.map((cat) => (
               <button
                 key={cat.id}
