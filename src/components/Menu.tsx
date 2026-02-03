@@ -1,7 +1,6 @@
-
-import React, { useState } from 'react';
-import { SectionId, MenuItem, CartItem } from '../types';
-import { MENU_ITEMS } from '../constants';
+import { useState } from 'react';
+import { SectionId, type CartItem, type MenuItem } from '../lib/types';
+import { MENU_ITEMS } from '../lib/constants';
 
 interface MenuProps {
   onAddToCart: (item: MenuItem) => void;
@@ -88,7 +87,7 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
             return (
               <div key={item.id} className="group flex flex-col bg-white shadow-xl p-4 border-[#D49A1F]/20 border-b-8 rounded-xl h-full transition-all hover:-translate-y-2">
                 <div className="relative bg-amber-50 mb-4 rounded-xl aspect-square overflow-hidden">
-                  <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={item.image} alt={item.name} loading='lazy' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   {item.isPopular && (
                     <div className="top-3 right-3 z-10 absolute bg-[#D49A1F] shadow-lg px-3 py-1 rounded-full font-black text-[10px] text-white uppercase">FAVORIT</div>
                   )}

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { SectionId } from '../types';
-import { HERO_IMAGES } from '../constants';
+import { useState, useEffect } from 'react';
+import { SectionId } from '../lib/types';
+import { HERO_IMAGES } from '../lib/constants';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           ))}
 
           {/* Carousel Indicators (Optional, but kept clean for aesthetics) */}
-          <div className="hidden bottom-10 left-10 z-30 absolute flex lg:flex gap-2">
+          <div className="hidden bottom-10 left-10 z-30 absolute lg:flex gap-2">
             {HERO_IMAGES.map((_, idx) => (
               <div
                 key={idx}

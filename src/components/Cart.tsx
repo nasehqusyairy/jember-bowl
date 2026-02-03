@@ -1,7 +1,5 @@
-
-import React from 'react';
-import { CartItem } from '../types';
-import { CONTACT_INFO } from '../constants';
+import { CONTACT_INFO } from "../lib/constants";
+import type { CartItem } from "../lib/types";
 
 interface CartProps {
   isOpen: boolean;

@@ -1,9 +1,7 @@
+import { PROMO_ITEMS } from '../lib/constants';
+import { SectionId } from '../lib/types';
 
-import React from 'react';
-import { SectionId } from '../types';
-import { PROMO_ITEMS } from '../constants';
-
-const Promotions: React.FC = () => {
+const Promotions = () => {
   return (
     <section id={SectionId.PROMO} className="py-20 px-4 bg-[#8B4513]">
       <div className="max-w-7xl mx-auto">
@@ -17,17 +15,17 @@ const Promotions: React.FC = () => {
               {[...Array(16)].map((_, i) => <div key={i} className="w-2 h-2 rounded-full bg-white"></div>)}
             </div>
           </div>
-          
+
           <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
             {PROMO_ITEMS.map((promo) => (
               <div key={promo.id} className="bg-[#FDFCE6] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer border-b-8 border-white/20">
                 <div className="h-64 overflow-hidden relative">
-                  <img 
-                    src={promo.image} 
-                    alt={promo.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                  <img
+                    src={promo.image}
+                    alt={promo.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <p className="font-black text-2xl drop-shadow-lg">{promo.title}</p>
                   </div>

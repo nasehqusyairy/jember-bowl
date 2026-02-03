@@ -1,7 +1,5 @@
-
-import React from 'react';
-import { SectionId } from '../types';
-import { CONTACT_INFO } from '../constants';
+import { CONTACT_INFO } from '../lib/constants';
+import { SectionId } from '../lib/types';
 
 const OrderSection: React.FC = () => {
   const apps = [

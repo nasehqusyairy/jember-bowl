@@ -1,18 +1,11 @@
-import { MenuItem, PromoItem } from './types';
-import paketBerduaImage from './images/paket-berdua.jpeg'
-import promoBundlingImage from './images/promo-bundling.jpeg'
-import promoValentineImage from './images/promo-valentine.jpeg'
-import promoMaba from './images/promo-maba.jpeg'
+import type { MenuItem, PromoItem } from './types';
 
-import post1 from '@/images/post1.jpeg'
-import post2 from '@/images/post2.jpeg'
-import post3 from '@/images/post3.jpeg'
-import post4 from '@/images/post4.jpeg'
+export const IMAGE_PATH = '/images/'
 
 // Gambar untuk Hero Carousel
 export const HERO_IMAGES = [
-  post1, post2, post3, post4
-];
+  'post1.jpeg', 'post2.jpeg', 'post3.jpeg', 'post4.jpeg'
+].map(el => IMAGE_PATH + el);
 
 // MENU_ITEMS list based on the provided data, ensuring all required fields like 'price' are present.
 export const MENU_ITEMS: MenuItem[] = [
@@ -27,7 +20,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "16",
-    "name": "Ayam Veteran",
+    "name": "Chicken Veteran",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050203565201636/detail/menueditor_item_e98bcca621684c3c80728b1b095be1c0_1768913742928480122.webp",
     "tagline": "Nasi, Ayam Crispy Original, Scramble Egg, Sayuran Timun",
@@ -54,7 +47,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "19",
-    "name": "Asam Manis",
+    "name": "Chicken Asam Manis",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024032917205830854/detail/menueditor_item_59f0ef4ec48e4e83be4fec6f4ef96e16_1768913810933674253.webp",
     "tagline": "Nasi, Ayam Krsipy, Scramble Egg, Saos Asam Manis, Sayuran Timun",
@@ -72,7 +65,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "15",
-    "name": "Ayam Geprek",
+    "name": "Chicken Geprek",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024060903522364950/detail/menueditor_item_7d232acd365b4eab8e286a68e9c29eba_1768969874958845867.webp",
     "tagline": "Nasi, Ayam Crispy, Scramble Egg, Sambel Geprek, Sayuran Timun",
@@ -119,7 +112,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "id": "26",
     "name": "Usus Icikiwir",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024102601593328805/detail/menueditor_item_3dde598f9ab04f238197ae2b590e0cb9_1754448780246783471.webp",
+    "image": "/images/usus-icikiwir.jpeg",
     "tagline": "Nasi, Usus Bumbu Merah, Scramble egg, sayuran",
     "price": 20000,
     "type": 0
@@ -128,7 +121,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "id": "25",
     "name": "Kerang Asam Pedas",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024102602080830912/detail/menueditor_item_7f6dfda6278742eb88f7b76bf1d080f8_1754448741189472324.webp",
+    "image": "/images/kerang-asam-pedas.jpeg",
     "tagline": "Nasi, Kerang bumbu asam pedas, Scrambled Egg, Saos Black Pepper, Sayuran.",
     "price": 30000,
     "type": 0
@@ -148,7 +141,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025011101584550592/detail/menueditor_item_d6556d122d724d339a090e9a064be4b4_1768971895542349723.webp",
     "tagline": "Mie Goreng, Ayam Crispy dibalur Salted Egg, Scramble Egg, sayuran",
-    "price": 21000,
+    "price": 22000,
     "type": 0
   },
   {
@@ -162,29 +155,29 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "7",
-    "name": "Nasi Kulit Cajo Sambal Ijo",
+    "name": "Nasi Kulit Cajo",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121502210265455/detail/menueditor_item_8fac1d906953427d9229e6f38bfd211a_1765765327764893391.webp",
     "tagline": "Nasi dengan kulit ayam, gurih dan beraroma rempah khas Indonesia dengan sambal ijo.",
-    "price": 22000,
+    "price": 12000,
     "type": 0
   },
   {
     "id": "8",
-    "name": "Telur Cajo Sambal Ijo",
+    "name": "Telur Cajo",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121107091445032/detail/menueditor_item_b4c796dc1eec46ab9f9dade12ddf6c97_1765436877672773795.webp",
     "tagline": "Telur dadar dengan sambal ijo pedas dan segar.",
-    "price": 20000,
+    "price": 13000,
     "type": 0
   },
   {
     "id": "9",
-    "name": "Ayam Penyet Cajo Sambal Ijo",
+    "name": "Ayam Penyet Cajo",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025121107051631835/detail/menueditor_item_533c48fd96b4474886c9be85a575bdaa_1765436664330737863.webp",
     "tagline": "Ayam goreng penyet, sambal ijo segar, nasi pulen, cocok untuk santapan lezat.",
-    "price": 28000,
+    "price": 18000,
     "type": 0
   },
   {
@@ -330,29 +323,29 @@ export const PROMO_ITEMS: PromoItem[] = [
     id: "p1",
     title: "Paket Berdua",
     description: "Nikmati momen makan bareng lebih hemat! Dapatkan 2 Rice Bowl Geprek + 2 Es Teh Jumbo dengan harga spesial.",
-    image: paketBerduaImage,
+    image: '/images/paket-berdua.jpeg',
     price: 50000
   },
   {
     id: "p2",
     title: "Promo Bundling Spesial",
     description: "Kombinasi sempurna untuk lapar kamu: Rice Bowl Salted Egg ditemani Es Teh Jumbo yang segar.",
-    image: promoBundlingImage,
+    image: '/images/promo-bundling.jpeg',
     price: 25000
   },
   {
     id: "p3",
     title: "Valentine's Day Promo",
     description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
-    image: promoValentineImage,
+    image: '/images/promo-valentine.jpeg',
     price: 40000
   },
   {
     id: "p4",
     title: "Promo Maba Kota Jember",
     description: "Spesial buat kamu Mahasiswa Baru (MABA) di Kota Jember! 🎓 Nikmati promo khusus All Varian Menu Bowl hanya dengan Rp19.500. Cukup tunjukkan KTM atau Twibbon MABA 2026 kamu dan jangan lupa follow sosial media @JemberBowl untuk klaim harganya. Yuk, sambut semester baru dengan rasa yang otentik!",
-    image: promoMaba,
-    price: 40000
+    image: '/images/promo-maba.jpeg',
+    price: 19500
   }
 ];
 

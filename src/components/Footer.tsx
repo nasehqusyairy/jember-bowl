@@ -1,8 +1,6 @@
-import React from 'react';
-import { CONTACT_INFO } from '../constants';
-import logo from '@/images/brand.png'
+import { CONTACT_INFO } from '../lib/constants';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-[#FDFCE6] px-6 pt-24 pb-12">
       <div className="mx-auto max-w-7xl">
@@ -12,7 +10,7 @@ const Footer: React.FC = () => {
               <div className="flex justify-center items-center bg-[#8B4513] border-[#D49A1F] border-2 rounded-full w-12 h-12 font-bold text-white text-xs">Jember<br/>Bowl</div>
               <span className="font-black text-[#8B4513] text-2xl">Jember Bowl</span>
             </div> */}
-            <img src={logo} alt="logo" className='h-12' />
+            <img src={'/images/brand.png'} alt="logo" className='h-12' />
 
 
             <p className="font-medium text-[#4A3428]/70">Rice Bowl asli Kota Jember yang siap memanjakan dengan pengalaman makan kenyang, puas, dan higienis!</p>

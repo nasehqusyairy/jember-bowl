@@ -1,7 +1,5 @@
-
-import React from 'react';
-import { PROMO_ITEMS } from '../constants';
-import { SectionId, PromoItem, CartItem } from '../types';
+import { PROMO_ITEMS } from '../lib/constants';
+import { SectionId, type PromoItem, type CartItem } from '../lib/types';
 
 interface PromoCarouselProps {
   onAddToCart: (item: PromoItem) => void;

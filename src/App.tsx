@@ -1,5 +1,4 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import PromoCarousel from './components/PromoCarousel';
@@ -9,7 +8,7 @@ import Menu from './components/Menu';
 import OrderSection from './components/OrderSection';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
-import { CartItem, MenuItem, PromoItem } from './types';
+import type { CartItem, MenuItem, PromoItem } from './lib/types';
 
 const App: React.FC = () => {
   const [cart, setCart] = useState<CartItem[]>([]);

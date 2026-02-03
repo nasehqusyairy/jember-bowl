@@ -1,9 +1,7 @@
-
-import React from 'react';
-import { SectionId } from '../types';
+import { SectionId } from '../lib/types';
 import { Drumstick, ShieldCheck, Utensils } from 'lucide-react';
 
-const Values: React.FC = () => {
+const Values = () => {
   const values = [
     {
       title: 'PUAS',

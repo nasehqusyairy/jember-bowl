@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { SectionId } from '../types';
-import logo from '@/images/brand.png'
+import { SectionId } from '../lib/types';
 
 interface NavbarProps {
   cartCount: number;
@@ -33,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart }) => {
             {/* <div className="flex justify-center items-center bg-[#8B4513] border-[#D49A1F] border-2 rounded-full w-12 h-12">
               <span className="font-bold text-white text-xs text-center leading-none">Jember<br/>Bowl</span>
             </div> */}
-            <img src={logo} alt="logo" className='h-12' />
+            <img src={'/images/brand.png'} alt="logo" className='h-12' />
             {/* <span className="font-bold text-[#8B4513] text-xl tracking-tight">JemberBowl</span> */}
           </div>
 

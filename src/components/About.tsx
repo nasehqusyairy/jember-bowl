@@ -1,6 +1,4 @@
-import React from 'react';
-import { SectionId } from '../types';
-import aboutImage from '@/images/about.jpeg'
+import { SectionId } from '../lib/types';
 
 const About: React.FC = () => {
   return (
@@ -9,7 +7,7 @@ const About: React.FC = () => {
         <div className="order-2 lg:order-1 lg:w-1/2">
           <div className="group relative">
             <img
-              src={aboutImage}
+              src={'/images/about.jpeg'}
               alt="Dapur Jember Bowl"
               className="shadow-2xl rounded-[3rem] w-full object-cover aspect-4/5 group-hover:scale-[1.02] transition-transform duration-700"
             />
