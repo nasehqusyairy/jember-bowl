@@ -44,10 +44,7 @@ const Menu: React.FC<MenuProps> = ({ onAddToCart, cart, onUpdateQuantity }) => {
     <section id={SectionId.MENU} className="bg-[#FDFCE6] px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center mb-12 text-center">
-          <h2 className="mb-2 font-bold text-[#8B4513] text-xl italic">Hello, #temanjemberbowl</h2>
-          <h3 className="mb-4 font-black text-[#8B4513] text-5xl uppercase tracking-tighter">DAFTAR MENU SUMBERSARI</h3>
-          <p className="mb-12 font-bold text-[#8B4513]/60 text-sm uppercase tracking-[0.2em]">Puas • Kenyang • Higienis</p>
-
+          <h2 className="mb-4 font-black text-[#8B4513] text-5xl uppercase tracking-tighter">DAFTAR MENU</h2>
           <div className="relative mb-12 w-full max-w-xl">
             <input
               type="text"
