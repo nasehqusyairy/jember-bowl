@@ -125,7 +125,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose, items, onUpdateQuantity, o
               CHECKOUT VIA WA
             </button>
             <p className="font-bold text-[#8B4513]/40 text-[10px] text-center uppercase tracking-widest">
-              *Pesanan akan dikirimkan ke Admin Jember Bowl Sumbersari
+              *Pesanan akan dikirimkan ke Admin Jember Bowl
             </p>
           </div>
         )}

@@ -27,13 +27,12 @@ const OrderSection: React.FC = () => {
 
           <div className="z-10 relative flex lg:flex-row flex-col items-center gap-16 lg:text-left text-center">
             <div className="lg:w-1/2">
-              <h2 className="mb-4 font-black text-[#D49A1F] text-xl uppercase tracking-widest">Outlet Sumbersari</h2>
-              <h3 className="mb-6 font-black text-5xl leading-none tracking-tighter">Siap Kirim Ke Tempatmu!</h3>
+              <h2 className="mb-6 font-black text-5xl leading-none tracking-tighter">Siap Kirim Ke Tempatmu!</h2>
               <p className="opacity-80 mb-8 text-xl leading-relaxed">
-                Jember Bowl Sumbersari kini lebih dekat. Klik logo aplikasi favoritmu untuk langsung memesan menu favorit dengan berbagai promo terbaru.
+                Jember Bowl kini lebih dekat. Klik logo aplikasi favoritmu untuk langsung memesan menu favorit dengan berbagai promo terbaru.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                <div className="bg-white/10 px-6 py-3 border border-white/20 rounded-full font-bold text-sm">🚚 Delivery Sumbersari</div>
+                <div className="bg-white/10 px-6 py-3 border border-white/20 rounded-full font-bold text-sm">🚚 Delivery</div>
                 <div className="bg-white/10 px-6 py-3 border border-white/20 rounded-full font-bold text-sm">⏱️ 10:00 - 21:00</div>
               </div>
             </div>
