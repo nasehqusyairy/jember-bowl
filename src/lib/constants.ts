@@ -180,6 +180,32 @@ export const MENU_ITEMS: MenuItem[] = [
     "price": 18000,
     "type": 0
   },
+  {
+    "id": "2",
+    "name": "Nasi Putih",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66DCGB3JAWKTX8913.webp",
+    "tagline": "Nasi putih lembut, cocok dipadukan dengan berbagai lauk favorit.",
+    "price": 5000,
+    "type": 2
+  }, {
+    "id": "44",
+    "name": "Kerupuk Ikan Merah",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026011303552541909/detail/menueditor_item_f7996635a9034cc9b454118b9727e604_1768276466634477399.webp",
+    "tagline": "Kerupuk Ikan Merah Kecil Kecil Yang Renyah, Gurih dan Sedap untuk sandingan Ricebowl / Cajo",
+    "price": 6000,
+    "type": 2
+  },
+  {
+    "id": "46",
+    "name": "Kerupuk Keong",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C6LZTCAJA261AT2926.webp",
+    "tagline": "Kerupuk Keong, gurih dan renyah.",
+    "price": 2500,
+    "type": 2
+  },
   // {
   //   "id": "11",
   //   "name": "Sego Bongkoes",
@@ -287,32 +313,6 @@ export const MENU_ITEMS: MenuItem[] = [
     "tagline": "Teh manis dingin menyegarkan.",
     "price": 6000,
     "type": 1
-  },
-  {
-    "id": "2",
-    "name": "Nasi Putih",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C66DCGB3JAWKTX8913.webp",
-    "tagline": "Nasi putih lembut, cocok dipadukan dengan berbagai lauk favorit.",
-    "price": 5000,
-    "type": 2
-  }, {
-    "id": "44",
-    "name": "Kerupuk Ikan Merah",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026011303552541909/detail/menueditor_item_f7996635a9034cc9b454118b9727e604_1768276466634477399.webp",
-    "tagline": "Kerupuk Ikan Merah Kecil Kecil Yang Renyah, Gurih dan Sedap untuk sandingan Ricebowl / Cajo",
-    "price": 6000,
-    "type": 2
-  },
-  {
-    "id": "46",
-    "name": "Kerupuk Keong",
-    "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C6LZTCAJA261AT2926.webp",
-    "tagline": "Kerupuk Keong, gurih dan renyah.",
-    "price": 2500,
-    "type": 2
   }
 ]
 
