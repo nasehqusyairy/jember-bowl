@@ -58,7 +58,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "id": "22",
     "name": "Chicken Cheese",
     "rating": 5,
-    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070905012035338/detail/menueditor_item_be6834fcd21e4059b18ab02dcfa242ff_1754448953431278490.webp",
+    "image": IMAGE_PATH + "chicken-cheese.jpeg",
     "tagline": "Ayam crispy, keju leleh, nasi pulen, sayuran timun segar.",
     "price": 20000,
     "type": 0
@@ -319,6 +319,27 @@ export const MENU_ITEMS: MenuItem[] = [
 // PROMO_ITEMS used in Promotions.tsx and PromoCarousel.tsx
 export const PROMO_ITEMS: PromoItem[] = [
   {
+    id: "p7",
+    title: "Spesial Ramadhan - Paket Berkah 1",
+    description: "2 Ricebowl Free 2 Es Teh Jumbo",
+    image: IMAGE_PATH + 'special-ramadhan.jpg',
+    price: 45000
+  },
+  {
+    id: "p6",
+    title: "Spesial Ramadhan - Paket Berkah 2",
+    description: "3 Ricebowl Free 3 Es Teh Jumbo",
+    image: IMAGE_PATH + 'special-ramadhan.jpg',
+    price: 70000
+  },
+  {
+    id: "p5",
+    title: "Paket Mubarak",
+    description: "5 Ricebowl Free 5 Es Teh Jumbo",
+    image: IMAGE_PATH + 'paket-mubarak.jpg',
+    price: 110000
+  },
+  {
     id: "p1",
     title: "Paket Berdua",
     description: "Nikmati momen makan bareng lebih hemat! Dapatkan 2 Rice Bowl Geprek + 2 Es Teh Jumbo dengan harga spesial.",
@@ -332,13 +353,13 @@ export const PROMO_ITEMS: PromoItem[] = [
     image: IMAGE_PATH + 'promo-bundling.jpeg',
     price: 25000
   },
-  {
-    id: "p3",
-    title: "Valentine's Day Promo",
-    description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
-    image: IMAGE_PATH + 'promo-valentine.jpeg',
-    price: 40000
-  },
+  // {
+  //   id: "p3",
+  //   title: "Valentine's Day Promo",
+  //   description: "Rayakan hari kasih sayang di Jember Bowl! Free 1 pcs Dairymilk/Fruit Tea dengan minimal transaksi Rp 40.000 dan memakai baju pink/merah muda.",
+  //   image: IMAGE_PATH + 'promo-valentine.jpeg',
+  //   price: 40000
+  // },
   {
     id: "p4",
     title: "Promo Maba Kota Jember",
