@@ -77,7 +77,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose, items, onUpdateQuantity, o
           ) : (
             items.map((item) => (
               <div key={item.id} className="flex gap-4 bg-white shadow-sm p-4 border border-[#8B4513]/5 rounded-3xl">
-                <img src={item.image} alt={item.name} className="rounded-2xl w-20 h-20 object-cover" />
+                <img src={item.image || `https://placehold.co/600x400?text=${item.name.replace(' ', '+')}`} alt={item.name} className="rounded-2xl w-20 h-20 object-cover" />
                 <div className="grow">
                   <div className="flex justify-between mb-1">
                     <h4 className="font-black text-[#8B4513] leading-tight">{item.name}</h4>

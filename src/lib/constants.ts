@@ -11,7 +11,7 @@ export const HERO_IMAGES = [
 export const MENU_ITEMS: MenuItem[] = [
   {
     "id": "12",
-    "name": "Korean Spicy",
+    "name": "Chicken Korean Spicy Reguler",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070904574216425/detail/menueditor_item_c921fcfe4a4e480e8cc91ca642510868_1769075479473268401.webp",
     "tagline": "Nasi putih dibaluri ayam renyah, Scrambel Egg, saos Korean Spicy dan sayuran timun segar.",
@@ -20,7 +20,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "16",
-    "name": "Chicken Veteran",
+    "name": "Veteran",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050203565201636/detail/menueditor_item_e98bcca621684c3c80728b1b095be1c0_1768913742928480122.webp",
     "tagline": "Nasi, Ayam Crispy Original, Scramble Egg, Sayuran Timun",
@@ -29,7 +29,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "17",
-    "name": "Black Pepper",
+    "name": "Chicken Black Pepper Reguler",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050203542623773/detail/menueditor_item_b814306d0a5b40d38bee1bf03bd3fd86_1768986394822468337.webp",
     "tagline": "Nasi, Ayam Crispy, Scramble Egg, Saos Lada Hitam, Sayuran Timun",
@@ -38,7 +38,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "18",
-    "name": "Salted Egg",
+    "name": "Chicken Salted Egg Reguler",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024042802150416611/detail/menueditor_item_4ddc30bbf06d4ddd92e3546eb85e5314_1768913784018463284.webp",
     "tagline": "Nasi, Ayam Crispy, Scrambel Egg, Spicy salted Egg, Sayuran Timun",
@@ -47,7 +47,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "19",
-    "name": "Chicken Asam Manis",
+    "name": "Chicken Asam Manis Reguler",
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024032917205830854/detail/menueditor_item_59f0ef4ec48e4e83be4fec6f4ef96e16_1768913810933674253.webp",
     "tagline": "Nasi, Ayam Krsipy, Scramble Egg, Saos Asam Manis, Sayuran Timun",
@@ -56,7 +56,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "22",
-    "name": "Chicken Cheese",
+    "name": "Chicken Cheese Reguler",
     "rating": 5,
     "image": IMAGE_PATH + "chicken-cheese.jpeg",
     "tagline": "Ayam crispy, keju leleh, nasi pulen, sayuran timun segar.",
@@ -65,7 +65,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     "id": "15",
-    "name": "Chicken Geprek",
+    "name": "Chicken Geprek Reguler",
     "rating": 5,
     "image": IMAGE_PATH + "chicken-geprek.jpeg",
     "tagline": "Nasi, Ayam Crispy, Scramble Egg, Sambel Geprek, Sayuran Timun",
@@ -194,7 +194,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2026011303552541909/detail/menueditor_item_f7996635a9034cc9b454118b9727e604_1768276466634477399.webp",
     "tagline": "Kerupuk Ikan Merah Kecil Kecil Yang Renyah, Gurih dan Sedap untuk sandingan Ricebowl / Cajo",
-    "price": 6000,
+    "price": 3000,
     "type": 2
   },
   {
@@ -203,7 +203,7 @@ export const MENU_ITEMS: MenuItem[] = [
     "rating": 5,
     "image": "https://food-cms.grab.com/compressed_webp/dish-photo-library/stock/detail/DIP-C6LZTCAJA261AT2926.webp",
     "tagline": "Kerupuk Keong, gurih dan renyah.",
-    "price": 2500,
+    "price": 3000,
     "type": 2
   },
   // {
@@ -313,7 +313,97 @@ export const MENU_ITEMS: MenuItem[] = [
     "tagline": "Teh manis dingin menyegarkan.",
     "price": 6000,
     "type": 1
-  }
+  },
+  {
+    "id": "37",
+    "name": "Scrambled Egg",
+    "rating": 5,
+    "image": "",
+    "tagline": "",
+    "price": 6000,
+    "type": 2
+  },
+  {
+    "id": "38",
+    "name": "All Variant Sauce",
+    "rating": 5,
+    "image": "",
+    "tagline": "",
+    "price": 4000,
+    "type": 2
+  },
+  {
+    "id": "39",
+    "name": "Sambal",
+    "rating": 5,
+    "image": "",
+    "tagline": "",
+    "price": 4000,
+    "type": 2
+  },
+  {
+    "id": "40",
+    "name": "Chicken Asam Manis Large",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024032917205830854/detail/menueditor_item_59f0ef4ec48e4e83be4fec6f4ef96e16_1768913810933674253.webp",
+    "tagline": "Nasi, Ayam Krsipy, Scramble Egg, Saos Asam Manis, Sayuran Timun",
+    "price": 27000,
+    "type": 0
+  },
+  {
+    "id": "41",
+    "name": "Chicken Black Pepper Large",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050203542623773/detail/menueditor_item_b814306d0a5b40d38bee1bf03bd3fd86_1768986394822468337.webp",
+    "tagline": "Nasi, Ayam Crispy, Scramble Egg, Saos Lada Hitam, Sayuran Timun",
+    "price": 27000,
+    "type": 0
+  },
+  {
+    "id": "42",
+    "name": "Chicken Korean Spicy Large",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2025070904574216425/detail/menueditor_item_c921fcfe4a4e480e8cc91ca642510868_1769075479473268401.webp",
+    "tagline": "Nasi putih dibaluri ayam renyah, Scrambel Egg, saos Korean Spicy dan sayuran timun segar.",
+    "price": 27000,
+    "type": 0
+  },
+  {
+    "id": "43",
+    "name": "Chicken Cheese Large",
+    "rating": 5,
+    "image": IMAGE_PATH + "chicken-cheese.jpeg",
+    "tagline": "Ayam crispy, keju leleh, nasi pulen, sayuran timun segar.",
+    "price": 27000,
+    "type": 0
+  },
+  {
+    "id": "47",
+    "name": "Chicken Salted Egg Large",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024042802150416611/detail/menueditor_item_4ddc30bbf06d4ddd92e3546eb85e5314_1768913784018463284.webp",
+    "tagline": "Nasi, Ayam Crispy, Scrambel Egg, Spicy salted Egg, Sayuran Timun",
+    "price": 28000,
+    "type": 0
+  },
+  {
+    "id": "45",
+    "name": "Chicken Geprek Large",
+    "rating": 5,
+    "image": IMAGE_PATH + "chicken-geprek.jpeg",
+    "tagline": "Nasi, Ayam Crispy, Scramble Egg, Sambel Geprek, Sayuran Timun",
+    "price": 28000,
+    "type": 0
+  },
+  {
+    "id": "48",
+    "name": "Veteran Large",
+    "rating": 5,
+    "image": "https://food-cms.grab.com/compressed_webp/items/IDITE2024050203565201636/detail/menueditor_item_e98bcca621684c3c80728b1b095be1c0_1768913742928480122.webp",
+    "tagline": "Nasi, Ayam Crispy Original, Scramble Egg, Sayuran Timun",
+    "price": 27000,
+    "type": 0
+  },
 ]
 
 // PROMO_ITEMS used in Promotions.tsx and PromoCarousel.tsx
