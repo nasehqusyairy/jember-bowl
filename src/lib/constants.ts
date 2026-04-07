@@ -408,27 +408,27 @@ export const MENU_ITEMS: MenuItem[] = [
 
 // PROMO_ITEMS used in Promotions.tsx and PromoCarousel.tsx
 export const PROMO_ITEMS: PromoItem[] = [
-  {
-    id: "p7",
-    title: "Spesial Ramadhan - Paket Berkah 1",
-    description: "2 Ricebowl Free 2 Es Teh Jumbo",
-    image: IMAGE_PATH + 'special-ramadhan.jpg',
-    price: 45000
-  },
-  {
-    id: "p6",
-    title: "Spesial Ramadhan - Paket Berkah 2",
-    description: "3 Ricebowl Free 3 Es Teh Jumbo",
-    image: IMAGE_PATH + 'special-ramadhan.jpg',
-    price: 70000
-  },
-  {
-    id: "p5",
-    title: "Paket Mubarak",
-    description: "5 Ricebowl Free 5 Es Teh Jumbo",
-    image: IMAGE_PATH + 'paket-mubarak.jpg',
-    price: 110000
-  },
+  // {
+  //   id: "p7",
+  //   title: "Spesial Ramadhan - Paket Berkah 1",
+  //   description: "2 Ricebowl Free 2 Es Teh Jumbo",
+  //   image: IMAGE_PATH + 'special-ramadhan.jpg',
+  //   price: 45000
+  // },
+  // {
+  //   id: "p6",
+  //   title: "Spesial Ramadhan - Paket Berkah 2",
+  //   description: "3 Ricebowl Free 3 Es Teh Jumbo",
+  //   image: IMAGE_PATH + 'special-ramadhan.jpg',
+  //   price: 70000
+  // },
+  // {
+  //   id: "p5",
+  //   title: "Paket Mubarak",
+  //   description: "5 Ricebowl Free 5 Es Teh Jumbo",
+  //   image: IMAGE_PATH + 'paket-mubarak.jpg',
+  //   price: 110000
+  // },
   {
     id: "p1",
     title: "Paket Berdua",
